@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Road-trip</string>
+    <string name="titre_searchBar_que_recherchez_vous">Que recherchez-vous</string>
+    <string name="btn_favori">Favori</string>
+    <string name="btn_poi">POI</string>
+    <string name="btn_home">Accueil</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoibmljaGQiLCJhIjoiY2xsNHU2ZnVvMGFtMDNrbDc4bW9xczlyZCJ9.zC0y7gR7TxLoBqMOoa8GCw</string>
+    <string name="no_match" >Pas trouver</string>
+    <string name="pas_de_connection">Pas de connection</string>
+    <string name="Result" />
+    <string name="Adresse_OpenWeather">https://api.openweathermap.org/data/2.5/weather</string>
+    <string name="appid_openWeather">554399514367e2732c24dfc383620d4d</string>
+    <string name="icon_meteo_non_charger">image meteo non charger</string>
+    <string name="Toast_fragment_Map_Acces_localisation_non_non_non">Non, non, non</string>
+    <string name="tv_temp_max">T° max:</string>
+    <string name="tv_temp_min">T° min:</string>
+    <string name="tv_aujourd_hui">Aujourd\'hui</string>
+</resources>

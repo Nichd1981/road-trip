@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Road-trip</string>
+    <string name="titre_searchBar_que_recherchez_vous">Find cities</string>
+    <string name="btn_favori">Like</string>
+    <string name="btn_home">Home</string>
+    <string name="no_match">no match</string>
+    <string name="pas_de_connection">Not connexion</string>
+    <string name="icon_meteo_non_charger">Image not found</string>
+    <string name="Toast_fragment_Map_Acces_localisation_non_non_non">no, no, no</string>
+    <string name="tv_aujourd_hui">Today</string>
+</resources>

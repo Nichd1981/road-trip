@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".MainActivity">
+
+
+  <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/Main_Content"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <!-- NestedScrollingChild goes here (NestedScrollView, RecyclerView, etc.). -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/searchbar_scrolling_view_behavior">
+      <!-- Screen content goes here. -->
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <com.google.android.material.search.SearchBar
+          android:id="@+id/search_bar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/titre_searchBar_que_recherchez_vous"
+          android:layout_marginTop="25dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.search.SearchView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/titre_searchBar_que_recherchez_vous"
+        app:layout_anchor="@id/search_bar">
+      <!-- Search suggestions/results go here (ScrollView, RecyclerView, etc.). -->
+      <ListView
+          android:id="@+id/lv_main"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+    </com.google.android.material.search.SearchView>
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+  <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/fragment_meteo"
+      android:layout_width="190dp"
+      android:layout_height="75dp"
+      android:layout_marginTop="100dp"
+      android:layout_marginEnd="20dp"
+      android:layout_alignParentEnd="true"
+      />
+
+  <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/Menu_Bar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="15dp"
+      android:layout_marginHorizontal="15dp"/>
+
+
+
+</RelativeLayout>
